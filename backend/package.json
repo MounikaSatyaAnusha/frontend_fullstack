@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "niha": "nodemon server.js"
+    "niha": "nodemon server.js",
+    "build":"npm i",
+    "start":"nodemon server.js"
   },
   "author": "niharika",
   "license": "ISC",
