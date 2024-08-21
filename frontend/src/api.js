@@ -1,1 +1,1 @@
-export const api="http://localhost:1000"
+export const api="https://frontend-fullstack-dvly.onrender.com"
