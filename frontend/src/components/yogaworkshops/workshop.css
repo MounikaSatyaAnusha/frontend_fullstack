@@ -1,0 +1,146 @@
+/* meditationworkshop.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7fa;
+    color: #004d40;
+}
+
+/* Header Styles */
+header {
+    height: 10vh;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; /* Aligns children to the left and right */
+    align-items: center;
+    background-color: #ffffff; /* Adjust the background color as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visual separation */
+}
+
+header .logo {
+    /* Keeps the logo on the left */
+    margin-right: auto; /* Pushes the navigation links to the right */
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header .navlinks {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Ensures navigation links are aligned to the right */
+}
+
+header .navlinks ul {
+    list-style-type: none;
+    display: flex; /* Ensure list items are displayed in a row */
+    margin: 0;
+    padding: 0;
+}
+
+header .navlinks ul li {
+    margin: 0 10px; /* Horizontal spacing between items */
+}
+
+header .navlinks ul li a {
+    font-weight: 700;
+    color: #000;
+    transition: color 0.5s;
+    text-decoration: none;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+header .navlinks ul li a:hover {
+    color: teal;
+}
+
+header .navlinks ul li a.home:hover {
+    color: black;
+}
+
+header .navlinks span {
+    display: none;
+}
+
+header button {
+    padding: 13px 40px;
+}
+
+/* Heading Styles */
+.heading {
+    color: white;
+    background-color: teal;
+    width: 100%;
+    height: 100px;
+    font-size: 50px;
+    padding: 20px 0;
+    text-align: center;
+    line-height: 60px;
+}
+
+/* Workshops Section */
+.workshops {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+.workshop {
+    border: 1px solid teal;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.workshop img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.workshop:hover {
+    transform: scale(1.05);
+}
+
+.workshop .content {
+    padding: 15px;
+    font-size: 14px;
+}
+
+.book-now {
+    background-color: #004d40;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.book-now:hover {
+    background-color: #003d33;
+    transform: scale(1.05);
+}
+
+/* Optional: Add some responsive design if needed */
+@media (max-width: 768px) {
+    header .navlinks ul {
+        flex-direction: column;
+        align-items: flex-start; /* Aligns items to the start of the container */
+    }
+
+    header .navlinks ul li {
+        margin: 5px 0;
+    }
+}

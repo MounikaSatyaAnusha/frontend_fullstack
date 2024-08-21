@@ -1,0 +1,237 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.header {
+    height: 10vh;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo img {
+    height: 60px;
+}
+
+.header .navlinks {
+    position: relative;
+}
+
+.header .navlinks .fas.fa-bars {
+    font-size: 25px;
+    cursor: pointer;
+    color: teal;
+}
+
+.header .menulists {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .menulists li {
+    margin: 0 15px;
+}
+
+.header .menulists li a {
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header .menulists li a:hover {
+    color: teal;
+}
+
+.header .signin, .signup {
+    border: 1px solid teal;
+    background-color: #59c0c0;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+.header .signin:hover, .signup:hover {
+    background-color: #007c7c;
+}
+
+.header .menulists.active {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: teal;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+.header .menulists:not(.active) {
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+/* Content Styles */
+.content {
+    padding: 20px;
+    max-width: 85%;
+    margin: auto;
+}
+button .signin{
+    height: 5px;
+    margin-top: 20px;
+    width: 20px ;
+}
+button .signup{
+    height: 5px;
+    margin-top: 20px;
+    width: 20px ;
+}
+.image {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.image img {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.workshop-details {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.workshop-details h1 {
+    font-family: serif;
+    margin-bottom: 15px;
+    color: teal;
+}
+
+.workshop-details p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.workshop-details ul {
+    list-style: none;
+}
+
+.workshop-details ul li {
+    margin-bottom: 10px;
+}
+
+.workshop-details .location {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.workshop-details .price {
+    margin-bottom: 20px;
+}
+
+.workshop-details .price h3 {
+    font-size: 18px;
+}
+
+.workshop-details .price-amount {
+    font-size: 24px;
+    color: teal;
+}
+
+.workshop-details button {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.workshop-details button:hover {
+    background-color: #007c7c;
+}
+
+/* Booking Form Styles */
+/* Add this to your CSS file */
+
+.booking-form {
+    display: none; /* Hide by default */
+    position: fixed; /* Position it fixed */
+    bottom: 0; /* Align it to the bottom of the viewport */
+    left: 0; /* Align it to the left of the viewport */
+    width: 100%; /* Full width */
+    background-color: white; /* Background color */
+    padding: 20px; /* Padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: shadow for better visibility */
+    z-index: 1000; /* Ensure it is on top */
+}
+
+.booking-form.active {
+    display: block; /* Show the form when active */
+}
+
+
+.booking-form h3 {
+    margin-bottom: 15px;
+    color: teal;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form input[type="tel"],
+.booking-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.booking-form button {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: #007c7c;
+}
