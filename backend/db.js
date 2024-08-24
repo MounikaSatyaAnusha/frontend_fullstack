@@ -24,7 +24,7 @@ async function connectToDB(cb) {
     const url = "mongodb+srv://thivariniharika:Harika1001@cluster0.twvqtbz.mongodb.net/";
 
     try {
-        const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
+        const client = new MongoClient(url);
         await client.connect();
         db = client.db("AST_Database");
         console.log("Connected to MongoDB successfully.");
