@@ -1,1 +1,1 @@
-export const api="https://frontend-fullstack-dvly.onrender.com"
+export const api="https://frontend-fullstack-2.onrender.com"
