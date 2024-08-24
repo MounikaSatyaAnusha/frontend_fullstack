@@ -597,3 +597,16 @@ h1 span {
         width: 100%;
     }
 }
+
+
+
+@media (max-width: 768px) {
+    header .navlinks ul {
+        flex-direction: column;
+        align-items: flex-start; /* Aligns items to the start of the container */
+    }
+
+    header .navlinks ul li {
+        margin: 5px 0;
+    }
+}
