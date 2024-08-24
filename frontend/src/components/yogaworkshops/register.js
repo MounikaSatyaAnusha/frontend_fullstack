@@ -17,15 +17,18 @@ import {
   
     const register = async () => {
       try {
-        const res = await axios.post("http://localhost:1000/register", { 
-          name,
-          email,
-          age,
-          gender,
-          contact,
-          address,
+        const res = await axios.post(api + "/register", { name,email, age, gender,contact,address });
+  
+      // try {
+      //   const res = await axios.post("http://localhost:1000/register", { 
+      //     name,
+      //     email,
+      //     age,
+      //     gender,
+      //     contact,
+      //     address,
       
-        });
+      //   });
   
         if (res.data.success) {
           alert("Registered successfully");
