@@ -254,7 +254,7 @@ input{
 }
 
  
-  @media screen and (max :1000px) {
+  /* @media screen and (max :1000px) {
     .Textbooks{
         grid-template-columns: repeat(2,1fr);
     }
@@ -263,7 +263,7 @@ input{
     .Textbooks{
         grid-template-columns: repeat(1,1fr);
     }
-  }
+  } */
 
  .details span{
     font-weight: bold;
