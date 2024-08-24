@@ -416,7 +416,7 @@ h1 span {
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     header {
         height: auto;
         line-height: normal;
@@ -588,7 +588,7 @@ h1 span {
         margin: 10%;
         left: 300px;
     }
-}
+} */
 
 /* Additional styles for video responsiveness */
 @media screen and (max-width: 720px) {
