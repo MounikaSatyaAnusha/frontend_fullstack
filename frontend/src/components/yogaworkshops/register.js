@@ -29,7 +29,7 @@ import {
   
         if (res.data.success) {
           alert("Registered successfully");
-          // nav('/success');
+          nav('/home');
         } 
       } catch (error) {
         console.error("Error occurred during post:", error);
